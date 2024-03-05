@@ -3,12 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Địa Điểm Du Lịch</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="wrapper">
         <header>
+            <!-- là cái icon để click sổ list ra -->
+            <div id="toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <!-- thanh menu + logo -->
             <div class="inner-header container" >
                 <a href="" id="logo">Long An</a>
                 <nav>
@@ -22,8 +29,70 @@
             </div>
         </header>
     </div>
-    <div id="banner">
+    <!-- 1 cái banner hình ảnh đầu trang -->
+    <div id="banner"></div>
+    
+    <div class="wrapper-box">
+        <h1>1. Nhà cổ trăm cột</h1>
+        <div id="img-wapper">
+            <img src="img/nhaTramCot.png" alt="">
+            <br><strong>Cổng vào di tích nhà cổ trăm cột (Ảnh ST)</strong>
+        </div>
+        <p>
+            Tọa lạc tại ấp Cầu Ngang, tả ngạn sông Vàm Cỏ Đông, xã Long Hựu Đông, huyện Cần Đước, tỉnh Long An. Nhà Trăm Cột là một trong di tích lịch sử cấp quốc gia(1997) và cũng là một trọng điểm du lịch lớn của tỉnh. Đây là công trình kiến trúc cổ được xây dựng theo lối nhà Rường xuyên trính độc đáo của xứ Huế.
+            Ngôi nhà này có 68 cột chính và nếu tính luôn 52 cột vuông nhỏ phụ trợ ở hàng 5 và vòng đố vách chái xây bằng xi măng thì ngôi nhà này có tới 120 cột lớn nhỏ. Nhà làm bằng các loại gỗ cẩm lai, gõ đỏ, gõ mật; mái lợp ngói âm dương, nền nhà bằng đá tảng cao 0,9m, mặt nền lát gạch Tàu lục giác, chia làm 3 gian 2 chái.
+        </p>
+        <p>
+            Mặc dù được gọi là nhà Trăm Cột, tuy nhiên thực tế lại có tới 120 cột với 68 cột chính và 52 cột vuông nhỏ phụ trợ ở hàng 5. Cho nên cái tên “nhà Trăm Cột” chỉ được dùng để ước lệ mà thôi. Đây là một địa điểm du lịch thu hút rất nhiều du khách trong và ngoài nước tới tham quan tại Long An.
+        </p>
+        <p>
+            Nhà cổ Trăm Cột được khởi công vào năm 1898 và sau 3 năm mới hoàn thành xong xây dựng thô. Sau đó phải mất thêm 2 năm để trang trí nội thất, nhà cửa. Mãi đến năm 1904 thì ngôi nhà này mới được xây dựng xong với phần chạm khắc trang trí do nhóm thợ từ làng Mỹ Xuyên làm. Một trong những ngôi làng chạm khắc mộc nổi tiếng của Thừa Thiên – Huế lúc bấy giờ.
+        </p>
+        <p>
+            Với diện tích ngôi nhà lên tới 882m² trong khuôn viên rộng 4.044m², ngôi nhà được xây dựng chủ yếu bằng các loại gỗ  quý như cẩm lai, gõ đỏ, gõ mật. Phần mái nhà được lợp ngói âm dương, nền nhà thì được lát bằng đá tảng cao với mặt nền lát gạch Tàu lục giác.
+            Ngôi nhà được chia làm 2 phần, phần trước là nơi đón tiến khách, phần sau là nơi để ở và sinh hoạt của gia đình. Với kết cấu kiểu xuyên trính, chính diện quay về hướng Tây Bắc, khung sườn kiểu bát trụ giúp cho bộ khung nhà luôn chắc chắn và không gian thoáng đãng khi không có hàng cột ở giữa.
+        </p>
+        
 
+
+        <div id="img-wapper">
+            <img src="img/LangNoi.png" alt="">
+        </div>
+        <div id="img-wapper">
+            <img src="img/khuDuLichST.png" alt="">
+        </div>
+        <div id="img-wapper">
+            <img src="img/khuDuLichCatTuong.png" alt="">
+        </div>
+        <div id="img-wapper">
+            <img src="img/cangBienTanLap.png" alt="">
+        </div>
+        <div id="img-wapper">
+            <img src="img/BaoTangNgapNuocLangSen.png" alt="">
+        </div>
+        
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(window).scroll(function(){
+                if($(this).scrollTop()){
+                    $('header').addClass('sticky')
+                }
+                else{
+                    $('header').removeClass('sticky')
+                }
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function(){
+            $('#toggle').click(function(){
+                $('nav').slideToggle();
+            });
+        })
+    </script>
 </body>
 </html>
