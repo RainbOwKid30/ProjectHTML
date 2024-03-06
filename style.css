@@ -15,6 +15,97 @@ img{
     text-align: center;
 }
 
+.headline{
+    text-align: center;
+    margin: 40px 0px;
+}
+
+h3{
+    font-size: 18px;
+    color: #111;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border: 1px solid #bebebe;
+    display: inline-block;
+    font-weight: 600;
+}
+
+ul.products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+ul.products li{
+    flex-basis: 30%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+ul.products li img{
+    max-width: 100%;
+    height: auto;
+}
+
+ul.products li .product-top{
+    position: relative;
+    overflow: hidden;
+}
+
+ul.products li .product-top .product-thumb{
+    display: block;
+}
+
+ul.products li:hover .product-top .product-thumb img{
+    filter: opacity(80%);
+}
+
+ul.products li .product-top .product-thumb img{
+    display: block;
+}
+
+ul.products li .product-top a.view-now{
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    background-color: #446084;
+    color: #fff;
+    padding: 5px 0px;
+    bottom: -36px;
+    position: absolute;
+    width: 100%;
+    transition: 0.25s ease-in-out;
+    opacity: 0.85;
+}
+
+ul.products li:hover a.view-now{
+    bottom: 0px;
+}
+
+ul.products li .product-info{
+    padding: 20px 0px;
+}
+
+ul.products li .product-info a{ 
+    display: block;
+    text-decoration: none;
+}
+
+ul.products li .product-info a.product-cat{
+    font-size: 13px;
+    padding: 3px 0px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+ul.products li .product-info a.product-name{
+    color: #334862;
+    padding: 3px 0px;
+    font-weight: 600;
+}
+
+
 .container{
     margin: 0px auto;
     max-width: 960px;
@@ -46,6 +137,11 @@ img{
 }
 
 
+#wrapper-1{
+    max-width: 1170px;
+    margin: 0px auto;
+}
+
 body{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #000;
@@ -73,7 +169,6 @@ header.sticky{
 
 header.sticky #logo{
     color: #000;
-
 }
 
 header.sticky #main-menu a{
@@ -85,6 +180,7 @@ header.sticky #main-menu a{
     justify-content: space-between;
     align-items: center;
 }
+
 
 #logo{
     color: #fff;
@@ -152,8 +248,6 @@ ul#main-menu a:hover::after{
         display: block;
     }
 }
-
-
 
 #banner{
     background: url(img/anh-long-an-21.jpg);
