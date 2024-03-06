@@ -127,14 +127,13 @@ ul#main-menu a:hover::after{
 
 #toggle{
     display: none;
-    background: #000000;
-    color: #ffffff;
+    color: #718093;
     text-align: right;
-    padding: 10px;
+    padding: 10px;    
     font-size: 20px;
     cursor: pointer;
 }
- /* dùng để căng chỉnh độ rộng của trang web */
+ /* dùng để căng chỉnh độ rộng và đóng mở menu của trang web */
 @media screen and (max-width: 768px) {
     .inner-header{
         flex-direction: column;
@@ -147,6 +146,10 @@ ul#main-menu a:hover::after{
 
     nav{
         display: none;
+    }
+
+    #logo{
+        display: block;
     }
 }
 
