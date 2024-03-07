@@ -29,6 +29,44 @@
     </div>
     <div id="banner"> </div>
 
+    <section class="contact1">
+        <form action="#">
+            <div class="input-box">
+                <div class="input-field fied">
+                    <input type="text" placeholder="Full Name" id="name" class="item" autocomplete="off">   
+                    <div class="error-txt"><strong>Full Name can't be blank</strong></div>
+                </div>
+                <div class="input-field fied">
+                    <input type="text" placeholder="Email Address" id="email" class="item" autocomplete="off">   
+                    <div class="error-txt email"><strong>Email Address can't be blank</strong></div>
+                </div>
+            </div>
+            <div class="input-box">
+                <div class="input-field fied">
+                    <input type="text" placeholder="Phone Number" id="phone" class="item" autocomplete="off">   
+                    <div class="error-txt"><strong>Phone Number can't be blank</strong></div>
+                </div>
+                <div class="input-field fied">
+                    <input type="text" placeholder="Subject" id="subject" class="item" autocomplete="off">   
+                    <div class="error-txt"><strong>Subject can't be blank</strong></div>
+
+                </div>
+            </div>
+            <div class="textarea-field field">
+                <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message" class="item" autocomplete="off"></textarea>
+                <div class="error-txt"><strong>Your Message can't be blank</strong></div>
+            </div>
+            <a href="https://www.facebook.com/Rainbowkid471"><img src="img/facebook.png" alt=""></a>
+            
+            <button type="submit">Send Message</button>
+            
+        </form>
+    </section>
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="script.js"></script>
+    
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script>
         $(document).ready(function() {
