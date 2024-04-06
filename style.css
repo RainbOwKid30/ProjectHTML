@@ -285,7 +285,7 @@ ul#main-menu a:hover::after{
 .name{
     font-size: 30px;
     font-family: 'Times New Roman', 'Arial';
-    width: 1000px;
+    width: 10px;
     margin: 100px auto;
     color: #000000;
     /*căng rgb(3, 2, 2)iữa*/
@@ -295,7 +295,7 @@ ul#main-menu a:hover::after{
     border: 2px solid rgba(7, 250, 153, 0.959);
     border-radius: 20px;
     min-height: 50vh;/*độ cao bé nhất 100%*/
-    line-height: 50px;
+    line-height: 20px;
     
     
 }
